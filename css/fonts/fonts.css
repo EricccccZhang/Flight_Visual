@@ -1,0 +1,22 @@
+@font-face {
+ font-family: "Inspira";
+ src: url("GEInspRg.eot?") format("embedded-opentype"),
+ 	  url("GEInspRg.TTF") format("truetype");
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: "Inspira";
+ src: url("GEInspBd.eot?") format("embedded-opentype"),
+      url("GEInspBd.TTF") format("truetype");
+ font-weight: bold;
+ font-style: normal;
+}
+
+
+body {
+	font: 13px "Inspira", sans-serif;
+}
+
+

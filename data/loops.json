@@ -1,0 +1,51 @@
+{
+	"loops": [
+		[
+			{"from": "SFO", "to":"JFK", "start":1353484500, "end": 1353503940},
+			{"from": "JFK", "to":"MIA", "start":1353407820, "end": 1353417720},
+			{"from": "MIA", "to":"SFO", "start":1353448740, "end": 1353472080}
+		],
+		[
+			{"from": "DEN", "to":"ORD", "start":1353429360, "end": 1353438180},
+			{"from": "ORD", "to":"LAX", "start":1353451860, "end": 1353466740},
+			{"from": "DEN", "to":"LAX", "start":1353419100, "end": 1353427320}
+		],
+		[
+			{"from": "SFO", "to":"DEN", "start":1353418500, "end": 1353426900},
+			{"from": "DEN", "to":"MSP", "start":1353425160, "end": 1353432420},
+			{"from": "MSP", "to":"SFO", "start":1353424800, "end": 1353439380}
+		],
+		[
+			{"from": "STL", "to":"BOS", "start":1353446520, "end": 1353455400},
+			{"from": "BOS", "to":"ATL", "start":1353454860, "end": 1353464880},
+			{"from": "ATL", "to":"STL", "start":1353466140, "end": 1353471720}
+		],
+		[
+			{"from": "LAS", "to":"PHL", "start":1353465720, "end": 1353482880},
+			{"from": "PHL", "to":"IAH", "start":1353421500, "end": 1353434700},
+			{"from": "IAH", "to":"LAS", "start":1353444060, "end": 1353455940}
+		],
+		[
+			{"from": "SLC", "to":"PHX", "start":1353455880, "end": 1353461400},
+			{"from": "PHX", "to":"ORD", "start":1353448680, "end": 1353462060},
+			{"from": "ORD", "to":"SLC", "start":1353451680, "end": 1353463980}
+		],
+		[
+			{"from": "PDX", "to":"PHX", "start":1353471480, "end": 1353481080},
+			{"from": "PHX", "to":"MSP", "start":1353423420, "end": 1353435120},
+			{"from": "MSP", "to":"PDX", "start":1353423900, "end": 1353437280}
+		],
+		[
+			{"from": "TPA", "to":"BOS", "start":1353440100, "end": 1353450060},
+			{"from": "BOS", "to":"ORD", "start":1353448800, "end": 1353458040},
+			{"from": "ORD", "to":"TPA", "start":1353460920, "end": 1353469680}
+		],
+		[
+			{"from": "DTW", "to":"LGA", "start":1353465720, "end": 1353471840},
+			{"from": "LGA", "to":"CLT", "start":1353428580, "end": 1353435120},
+			{"from": "CLT", "to":"DTW", "start":1353446760, "end": 1353452880}
+		]
+		
+	]
+
+}
