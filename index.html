@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/fonts/fonts.css" rel='stylesheet' type='text/css'>
+<link href="css/jquery-ui-1.10.3.custom.css" rel='stylesheet' type="text/css">
+<link href="css/styles.css" rel='stylesheet' type='text/css'>
+<title>GE Flight Quest</title>
+<meta property="og:title" content="GE Flight Quest"/>
+<meta property="og:url" content="http://visualization.geblogs.com/visualization/flight-quest/"/>
+<meta property="og:image" content="./images/screen.png" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Think you can change the future of flight? See how GE Flight Quest challengers are"> 
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="title" content="GE Flight Quest" />
+<meta name="description" content="Think you can change the future of flight? See how GE Flight Quest challengers are" />
+
+</head>
+<body>
+<div class="bg"></div>
+<div id="FlightPatterns">
+	
+	<div id="wrapper">
+		<div class="header">
+			<div class="title">Flight Quest</div>
+			<div class="aboutLink">About</div>
+			<div class="logo"></div>
+			
+			<ul class="share">
+				<li class="facebook"></li>
+				<li class="twitter"></li>
+				<li class="gplus"></li>
+				<li class="email"></li>
+				
+			</ul>
+		</div>
+		<div class="aboutText">
+			<div class="close">×</div>
+			<p>Airline companies are constantly looking for ways to make flight more efficient. From gate conflicts to operational challenges to air traffic management, the dynamics of a flight can change quickly and lead to costly delays.</p>
+			<p>Fortunately, advancements in real-time big data analysis are changing the course of flights as we know it. Imagine if pilots could augment their decision-making process with "real time business intelligence" — information available in the cockpit that would allow them to make adjustments to their flight patterns. </p>
+			<p>Several amazing contestants submitted useable and scalable algorithms based on model data that improved flight arrival prediction times by up to 40% saving fuel, cabin crew costs and time. This visualization helps explain just how much saving 2.5 minutes per flight can save an airline. Once the animation is complete, you can create your scenario by changing the airline size and the number of minutes to save.</p>
+		</div>
+		<div id="intro">
+			<div id="intro_hype_container" style="position:relative;overflow:hidden;width:960px;height:900px;"></div>
+		</div>
+		<div class="viz">
+			<div class="stats">
+				<div class="dailyStats variables">
+					<div class="dailyStats-title">Variables</div>
+
+					<div class="dailyStat dailyStat-airlineSize">
+						<div class="dailyStat-title"># airplanes</div>
+						<div class="dailyStatsValue">
+							<span class="darkDigit"></span><span class="darkDigit"></span><span class="darkDigit"></span>
+						</div>
+						<div class="dailyStatCaption">medium sized fleet</div>
+					</div>
+					<div class="dailyStat dailyStat-timeSavedPer">
+						<div class="dailyStat-title">time savings</div>
+						<div class="dailyStatsValue">
+							<span class="darkDigit"></span><span class="darkDigit"></span><span class="darkDigit"></span>
+						</div>
+						<div class="dailyStatCaption">minutes saved per arrival</div>
+					</div>
+					
+				</div>
+				<div class="flightQuestStats dailyStats">
+					<div class="dailyStats-title">Flight Quest Daily Savings</div>
+					<div class="dailyStat dailyStat-arrivals">
+						<div class="dailyStat-title">arrivals</div>
+						<div class='dailyStatsAirplaneValue clearfix'>
+							<img src="images/planeLg.png" width="33" alt="plane" class="dailyStatsPlaneIcon" id="planeIcon">
+							<div class="dailyStatsValue">
+								<span class="darkDigit"></span><span class="darkDigit"></span><span class="darkDigit"></span>
+							</div>
+						</div>
+						<div class="dailyStatCaption">on average, one plane flies 4 times a day</div>
+					</div>
+					<div class="dailyStat dailyStat-moneySavings">
+						<div class="dailyStat-title">fuel &amp; crew cost savings</div>
+						<div class="dailyStatsValue">
+							<span class="blueDigit"></span><span class="blueDigit"></span><span class="blueDigit"></span>
+						</div>
+						<div class="dailyStatCaption">thousand dollars</div>
+					</div>
+					<div class="dailyStat dailyStat-timeSavings">
+						<div class="dailyStat-title">time savings</div>
+						<div class="dailyStatsValue">
+							<span class="blueDigit"></span><span class="blueDigit"></span><span class="blueDigit"></span>
+						</div>
+						<div class="dailyStatCaption">minutes</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="yearStats">
+				<div class="dailyStats-title">Flight Quest Yearly Savings</div>
+				<div class="dailyStat yearlyStat-moneySavings">
+					<div class="dailyStat-title">fuel &amp; crew cost savings</div>
+					<div class="dailyStatsValue">
+						<span class="blueDigit"></span><span class="blueDigit"></span><span class="blueDigit"></span>
+					</div>
+					<div class="dailyStatCaption">million dollars</div>
+				</div>
+				<div class="dailyStat yearlyStat-timeSavings">
+					<div class="dailyStat-title">time savings</div>
+					<div class="dailyStatsValue">
+						<span class="blueDigit"></span><span class="blueDigit"></span><span class="blueDigit"></span>
+					</div>
+					<div class="dailyStatCaption">thousand hours</div>
+				</div>
+				<div class="dailyStat yearlyStat-aircraftFreed">
+					<div class="dailyStat-title">aircraft freed up per year</div>
+					<div class="dailyStatsValue">
+						<span class="blueDigit"></span><span class="blueDigit"></span><span class="blueDigit"></span>
+					</div>
+					<div class="dailyStatCaption"></div>
+				</div>
+				
+			</div>
+			<!-- <div class="replayBtn"></div> -->
+			<div class="createBtn"></div>
+			<div class="create">
+				<div class="title">Create Your Scenario</div>
+				<div class="input inputMinutes">
+					<div class="inputTitle">Minutes Saved</div>
+					<div class="minutesSlider"></div>
+					<ul class="sliderLbls minutesSliderLbls clearfix">
+						<li class="minute1">1</li>
+						<li class="minute2">2</li>
+						<li class="minute3">3</li>
+						<li class="minute4">4</li>
+						<li class="minute5">5</li>
+					</ul>
+					<div class="descr">Based on the model data, the winning algorithms were able to save anywhere between 1 and 5 minutes in flight arrival times. Some of the algorithms used a mixture of gradient boosting and random forest models to predict gate and runway arrivals. Move the slider to another value to see the impact of saving that many minutes.</div>
+				</div>
+				<div class="input inputAirlineSize">
+					<div class="inputTitle">Airline Size</div>
+					<div class="airlineSizeSlider"></div>
+					<ul class="sliderLbls airlineSizeLbls clearfix">
+						<li class="small">Small</li>
+						<li class="medium">Medium</li>
+						<li class="large">Large</li>
+					</ul>
+					
+					<div class="descr">Use the slider to change the airline size. A small airline typically consists of 60 airplanes, a medium sized airline is about 120 airplanes and a large is about 710 airplanes.</div>
+				</div>
+				<div class="playBtn"></div>
+			</div>
+			<div class="map">
+				<div class="mapClocks">
+					<div class="clock pacific">
+						<div class="clockSprite"></div>
+						<div class="clockLbl"><span class="time"></span> pacific</div>
+					</div>
+					<div class="clock mountain">
+						<div class="clockSprite"></div>
+						<div class="clockLbl"><span class="time"></span> mountain</div>
+					</div>
+					<div class="clock central">
+						<div class="clockSprite"></div>
+						<div class="clockLbl"><span class="time"></span> central</div>
+					</div>
+					<div class="clock eastern">
+						<div class="clockSprite"></div>
+						<div class="clockLbl"><span class="time"></span> eastern</div>
+					</div>
+				</div>
+				<canvas id="planesCanvas" class="planes" width="960" height="600"></canvas>
+				
+			</div>
+			
+		
+		</div>
+	</div>
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="vendor/jquery.ui.touch-punch.min.js"></script>
+<script src="vendor/d3.v3.min.js"></script>
+<script src="vendor/EventEmitter.min.js"></script>
+<script src="vendor/lodash.min.js"></script>
+<script src="vendor/requestAnimationFrame.js"></script>
+<script src="vendor/jquery.easing.js"></script>
+<script src="vendor/Tarjan.js"></script>
+<script src="js/extern.js"></script>
+<script src="js/SavingsCalculator.js"></script>
+<script src="js/AirportGraph.js"></script>
+<script src="js/FlightPatternsApp.js"></script>
+
+<script>
+var app;
+var flightApp;
+window.onload = function() {
+	app = new FlightPatternsApp()
+	flightApp = app;
+}
+</script>
+</body>
+
+</html>
